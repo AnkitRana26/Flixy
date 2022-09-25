@@ -119,8 +119,8 @@ nav li {
 }
 
 #movies img {
-	width: 360px;
-	height: 400px;
+	width: 100%;
+	
 	margin: auto;
 	/* height: 60%; */
 }
@@ -128,15 +128,17 @@ nav li {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 5px;
-	padding: 3%;
+	padding: 5%;
 	/* height: ; */
 	text-align: center;
-	width: 90%;
+	width: 100%;
 	margin: auto;
 }
 
 .movieCard {
 	color: white;
+	display: grid;
+	align-content: space-between;
 	/* height: fit-content; */
 	border: black 3px solid;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -307,4 +309,26 @@ body::-webkit-scrollbar-track {
 
 .searchMovieDivs:hover{
 	border: 2px solid white;
+}
+
+ 
+@media screen and (max-width:900px) {
+	nav{
+		/* display: grid; */
+		grid-template-columns: repeat(1, 1fr);
+		justify-content: center;
+		justify-items: center;
+		
+	}
+	nav ul{
+		justify-content: space-between;
+	}
+	nav img{
+		width: 30%;
+		margin: auto;
+	}
+	#movies{
+		grid-template-columns: repeat(1,1fr);
+		justify-items: center;
+	}
 }

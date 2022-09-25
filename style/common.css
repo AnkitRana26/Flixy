@@ -16,10 +16,14 @@ nav {
 	margin: auto;
 	padding: 5px 0px;
 	display: grid;
-	grid-template-columns: 15% 30%;
+	grid-template-columns: 15% 50% 30%;
 	justify-content: space-between;
 	align-items: center;
+	position: sticky;
+	top: 0px;
+	z-index: 1;
 	/* border: 1px solid white; */
+	/* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); */
 }
 nav img {
 	width: 85%;
@@ -32,7 +36,7 @@ nav img {
 nav ul {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	height: 100%;
 	/* border: 1px solid yellow; */
@@ -108,3 +112,20 @@ form {
 }
 
 
+@media screen and (max-width:900px) {
+	nav{
+		/* display: grid; */
+		grid-template-columns: repeat(1, 1fr);
+		justify-content: center;
+		justify-items: center;
+		
+	}
+	nav ul{
+		justify-content: space-between;
+	}
+	nav img{
+		width: 30%;
+		margin: auto;
+	}
+	
+}
