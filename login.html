@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FLIXY-LogIn</title>
+		<link rel="icon" href="./src/ICON.png" />
+		<link rel="stylesheet" href="./style/common.css" />
+	</head>
+	<body>
+		<nav>
+			<img src="./src/logo.png" alt="flixy logo" />
+			<ul id="navList">
+				<li>
+					<button><a href="index.html">Home</a></button>
+				</li>
+				<li>
+					<button><a href="login.html" id="userLogIn">LogIn</a></button>
+				</li>
+				<li>
+					<button><a href="signup.html" id="userLogOut">SignUp</a></button>
+				</li>
+			</ul>
+		</nav>
+		<div id="login-form-div">
+			<form id="logIn">
+				<h1>LogIn</h1>
+				<label for="emailLogIn">Email Id</label>
+				<input type="email" id="emailLogIn" required />
+				<label for="passwordLogIn">Password</label>
+				<input type="password" id="passwordLogIn" required />
+				<input type="Submit" value="SignUp" />
+			</form>
+		</div>
+		<script src="./script/login.js"></script>
+	</body>
+</html>

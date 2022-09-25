@@ -1,0 +1,117 @@
+body {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(https://assets.nflxext.com/ffe/siteui/vlv3/a795ee10-8c6d-467c-8159-254be2b69013/c08e0e8a-d28f-4d82-bf93-0a9531b58a6d/IN-en-20220912-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+	background-blend-mode: darken;
+	background-size: auto;
+	/* width: 100%; */
+}
+
+#showDescription{
+    color: white;
+}
+
+#showDescription >div{
+    display: grid;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 5%;
+    margin: auto;
+    width: 95%;
+
+}
+#showDescription >div>div:first-child{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 5%; */
+    
+}
+#showDescription >div>p{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 2%;
+    padding: 5%;
+    border-top: 2px solid white;
+    
+}
+#showDescription >div h2{
+    width: fit-content;
+    
+}
+#showDescription details{
+    /* width: fit-content; */
+    text-align: center;
+    list-style: none;
+    
+}
+details > summary::-webkit-details-marker {
+    display: none;
+  }
+#showDescription details h2{
+    width: fit-content;
+    text-align: center;
+    display: inline-block;
+    font-size: 30px;
+
+    
+}
+#showDescription details i{
+    font-size: 30px;
+    
+}
+#showDescription >div img{
+    width: 70%;
+    border: 1px solid white;
+    display: block;
+    margin: auto;
+    
+}
+#upperDiv h2{
+   font-size: 40px;
+   padding-bottom: 15px;
+    
+}
+#upperDiv h3{
+   font-size: 30px;
+   padding-bottom: 15px;
+    
+}
+#upperDiv p{
+   font-size: 20px;
+   padding-bottom: 10px;
+    
+}
+
+
+#trailerDiv h2{
+    display: inline-block;
+    width: fit-content;
+    color: white;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-size: 30px;
+    
+    
+
+}
+#trailerDiv i{
+    color: white;
+    font-size: 30px;
+    display: inline;
+    text-align: center;
+}
+#trailerDiv details{
+    text-align: center;
+}
+#trailerDiv{
+    border-top: 2px solid white;
+}
+#mainDiv iframe{
+    width: 100%;
+    height: 800px;
+
+
+}
+

@@ -1,0 +1,310 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), black;
+}
+nav {
+	width: 100%;
+	margin: auto;
+	padding: 5px 0px;
+	display: grid;
+	grid-template-columns: 15% 50% 30%;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0px;
+	z-index: 1;
+	/* border: 1px solid white; */
+	/* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); */
+}
+nav img {
+	width: 85%;
+	margin: auto;
+
+	padding: 5px 20px;
+	/* border: 1px solid yellow; */
+}
+
+nav ul {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+	/* border: 1px solid yellow; */
+}
+nav a {
+	text-decoration: none;
+	font-size: larger;
+	/* padding: 2% 2%; */
+	color: white;
+	font-weight: bold;
+}
+nav button {
+	background-color: #e50914;
+	width: fit-content;
+	border: none;
+	padding: 10px;
+	display: block;
+	/* border: 1px solid white; */
+	margin: auto;
+	border-radius: 5px;
+}
+nav li {
+	list-style: none;
+	display: inline-block;
+	width: fit-content;
+}
+
+#slideshow img {
+	max-width: 100%;
+	/* height: 100%; */
+	margin: auto;
+	margin: 0px;
+	padding: 0px;
+	/* border: 1px solid white; */
+	animation-name: slide;
+	position: relative;
+	animation-duration: 5000ms;
+	animation-timing-function: linear;
+	overflow-x: hidden;
+	animation-iteration-count: infinite;
+	
+}
+@keyframes slide {
+	0% {
+		visibility: 100%;
+		/* transform: translateX(10px); */
+	}
+	25% {
+		visibility: 75%;
+		/* transform: translateX(0px); */
+	}
+	50% {
+		visibility: 50%;
+		/* transform: translateX(0px); */
+	}
+	75% {
+		visibility: 25%;
+		/* transform: translateX(0px); */
+	}
+	100% {
+		visibility: 0%;
+		/* transform: translateX(-100px); */
+	}
+}
+
+#slideshow {
+	/* border: 1px solid yellow; */
+	width: 100%;
+	margin: auto;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	margin: 0px;
+	/* padding: -1px; */
+}
+
+#sort-buttons {
+	padding: 2%;
+}
+
+#sort-buttons select {
+	padding: 1%;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), black;
+	color: white;
+}
+
+#movies img {
+	width: 360px;
+	height: 400px;
+	margin: auto;
+	/* height: 60%; */
+}
+#movies {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5px;
+	padding: 3%;
+	/* height: ; */
+	text-align: center;
+	width: 90%;
+	margin: auto;
+}
+
+.movieCard {
+	color: white;
+	/* height: fit-content; */
+	border: black 3px solid;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 5px;
+	background-color: #e50914;
+	width: fit-content;
+}
+
+.movieCard:hover {
+	border: 3px solid white;
+}
+.movieCard h2 {
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+
+#notLogged h1 {
+	color: white;
+	font-size: 40px;
+	font-weight: 900;
+	font-family: sans-serif;
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+#notLogged {
+	display: block;
+	margin: auto;
+	/* border: 1px solid white; */
+	margin-top: 1%;
+	width: 40%;
+}
+.bagckground {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(https://assets.nflxext.com/ffe/siteui/vlv3/a795ee10-8c6d-467c-8159-254be2b69013/c08e0e8a-d28f-4d82-bf93-0a9531b58a6d/IN-en-20220912-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+		background-blend-mode: darken;
+	background-size: cover;
+}
+
+#notLogged button {
+	width: 40%;
+	display: block;
+	margin: auto;
+	padding: 2%;
+	margin-top: 2%;
+	font-size: larger;
+	color: white;
+	background-color: #e50914;
+	border-radius: 5px;
+	border: none;
+}
+#notLogged a {
+	text-decoration: none;
+}
+#notLogged img {
+	width: 40%;
+	display: block;
+	margin: auto;
+}
+
+#searchMovies {
+	padding: 1%;
+	background: linear-gradient(
+		rgba(255, 255, 255, 0.6),
+		rgba(255, 251, 251, 0.6)
+	);
+	/* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	color: white;
+	width: 50%;
+	right: 0;
+	font-size: large;
+}
+
+#searchMovies:focus {
+	width: 100%;
+	animation-name: showSearch;
+	animation-duration: 100ms;
+	animation-timing-function: linear;
+}
+
+@keyframes showSearch {
+	from {
+		width: 50%;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+body::-webkit-scrollbar {
+	width: 8px;
+	background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+	color: #e50914;
+	height: 50px;
+	border-radius: 50%;
+	background-color: red;
+}
+body::-webkit-scrollbar-track {
+	color: transparent;
+	background-color: transparent;
+}
+
+#searchedMovies > div {
+	padding: 3%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	color: white;
+
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	align-items: center;
+}
+
+#searchedMovies {
+	width: 80%;
+	margin: auto;
+	display: grid;
+	row-gap: 10px;
+}
+
+#searchedMovies > div {
+	color: white;
+}
+#searchedMovies img {
+	width: 80%;
+}
+#searchedMovies > div p {
+	color: white;
+	font-size: 20px;
+	margin: 1% auto;
+}
+#searchedMovies h2 {
+	color: white;
+	font-size: 40px;
+}
+
+#searchedMovies button {
+	background-color: red;
+	color: white;
+	height: fit-content;
+	padding: 2%;
+	width: fit-content;
+	margin: auto;
+	display: block;
+	font-size: larger;
+}
+
+.addBG {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(https://assets.nflxext.com/ffe/siteui/vlv3/a795ee10-8c6d-467c-8159-254be2b69013/c08e0e8a-d28f-4d82-bf93-0a9531b58a6d/IN-en-20220912-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+		/* background-blend-mode: darken; */
+		background-size:auto;
+}
+.center {
+	text-align: center;
+}
+
+
+
+.searchMovieDivs{
+	border: 2px solid black;
+}
+
+.searchMovieDivs:hover{
+	border: 2px solid white;
+}

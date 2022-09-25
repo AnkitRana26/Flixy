@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FLIXY</title>
+		<link rel="icon" href="./src/ICON.png" />
+		<link rel="stylesheet" href="./style/index.css" />
+		<link rel="stylesheet" href="./style/description.css" />
+	</head>
+	<body>
+		<nav>
+			<img src="./src/logo.png" alt="flixy logo" />
+			<input type="text" id="searchMovies" placeholder="Search Movies" />
+			<ul id="navList">
+				<li>
+					<button><a href="index.html">Home</a></button>
+				</li>
+				<li>
+					<button><a href="login.html" id="userLogIn">LogIn</a></button>
+				</li>
+				<li>
+					<button><a href="signup.html" id="userLogOut">SignUp</a></button>
+				</li>
+			</ul>
+		</nav>
+		<div id="notLogged">
+			<img src="./src/smile.png" alt="" />
+			<h1>Please LogIn to Watch Movies</h1>
+			<a href="./login.html"><button>GO TO LOGIN</button></a>
+		</div>
+        <div id="showDescription">
+            
+        </div>
+		<div id="searchedMovies">
+			
+		</div>
+
+
+
+
+		<script src="./script/description.js"></script>
+		<script
+			src="https://kit.fontawesome.com/a103610109.js"
+			crossorigin="anonymous"
+		></script>
+
+	</body>
+</html>
