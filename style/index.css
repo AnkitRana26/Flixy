@@ -321,6 +321,7 @@ body::-webkit-scrollbar-track {
 		
 	}
 	nav ul{
+		margin-top: 2%;
 		justify-content: space-between;
 	}
 	nav img{
