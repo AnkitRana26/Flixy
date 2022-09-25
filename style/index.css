@@ -349,3 +349,26 @@ body::-webkit-scrollbar-track {
 		margin: 1% auto;
 	}
 }
+
+footer{
+	color: white;
+	display: flex;
+	justify-content: center;
+	padding: 1%;
+	font-size: 1em;
+	font-family: sans-serif;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+	margin-top: 1%;
+	position: fixed;
+	bottom: 0px;
+	width: 40%;
+	text-align: left;
+}
+footer a{
+	color: white;
+	margin: auto 2%;
+}
+
+footer a:hover{
+	color: rgb(147, 147, 241);
+}
