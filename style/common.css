@@ -39,6 +39,7 @@ nav ul {
 	justify-content: space-between;
 	align-items: center;
 	height: 100%;
+	margin: auto;
 	/* border: 1px solid yellow; */
 }
 nav a {
@@ -119,6 +120,10 @@ form {
 		justify-content: center;
 		justify-items: center;
 		
+	}
+	form{
+		margin-top: 10%;
+		width: 80%;
 	}
 	nav ul{
 		justify-content: space-between;
