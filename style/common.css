@@ -126,7 +126,7 @@ form {
 		width: 80%;
 	}
 	nav ul{
-		margin: 2%;
+		/* margin: 2%; */
 		justify-content: space-between;
 	}
 	nav img{

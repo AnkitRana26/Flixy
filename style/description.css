@@ -68,17 +68,17 @@ details > summary::-webkit-details-marker {
     
 }
 #upperDiv h2{
-   font-size: 40px;
+   font-size: 4em;
    padding-bottom: 15px;
     
 }
 #upperDiv h3{
-   font-size: 30px;
+   font-size: 2em;
    padding-bottom: 15px;
     
 }
 #upperDiv p{
-   font-size: 20px;
+   font-size: 2em;
    padding-bottom: 10px;
     
 }
@@ -115,3 +115,21 @@ details > summary::-webkit-details-marker {
 
 }
 
+@media screen and (max-width:900px) {
+
+    #upperDiv h2{
+        font-size: 2em;
+        padding-bottom: 15px;
+         
+     }
+     #upperDiv h3{
+        font-size: 1em;
+        padding-bottom: 15px;
+         
+     }
+     #showDescription >div>p{
+        font-size: 1em;
+       
+        
+    }
+}

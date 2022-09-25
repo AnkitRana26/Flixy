@@ -2,7 +2,7 @@ let loggedIn = localStorage.getItem("loggedIn") || false;
 
 if (loggedIn) {
 	// document.getElementById("slideshow").style.display = "grid";
-	// document.getElementById("sort-buttons").style.display = "block";
+	document.getElementById("showDescription").style.display = "block";
 	document.getElementById("searchMovies").style.visibility = "visible";
 	// document.getElementById("movies").style.display = "grid";
 	document.getElementById("notLogged").style.display = "none";
@@ -19,7 +19,7 @@ if (loggedIn) {
 	});
 } else {
 	document.getElementById("searchMovies").style.visibility = "hidden";
-	// document.getElementById("slideshow").style.display = "none";
+	document.getElementById("showDescription").style.display = "none";
 	// document.getElementById("sort-buttons").style.display = "none";
 	// document.getElementById("movies").style.display = "none";
 	document.getElementById("notLogged").style.display = "block";
@@ -191,7 +191,7 @@ function showMovie(movie){
         title.innerText=movie.title;
         released.innerText=movie.release_date;
         // actors.innerText=`Cast :-${data.Actors}`;
-        plot.innerHTML=`<details><summary><h2>Movie Ovrview</h2> <i class="fa-solid fa-circle-chevron-down"></i></summary>${movie.overview}</details>`;
+        plot.innerHTML=`<details><summary><h2>Movie Overview</h2> <i class="fa-solid fa-circle-chevron-down"></i></summary>${movie.overview}</details>`;
         rating.innerHTML=` ${movie.vote_average} <i class="fa-solid fa-star"></i>`;
         
         upperDiv.id="upperDiv"

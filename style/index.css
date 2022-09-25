@@ -272,12 +272,12 @@ body::-webkit-scrollbar-track {
 }
 #searchedMovies > div p {
 	color: white;
-	font-size: 20px;
+	font-size: 2em;
 	margin: 1% auto;
 }
 #searchedMovies h2 {
 	color: white;
-	font-size: 40px;
+	font-size: 2em;
 }
 
 #searchedMovies button {
@@ -331,5 +331,21 @@ body::-webkit-scrollbar-track {
 	#movies{
 		grid-template-columns: repeat(1,1fr);
 		justify-items: center;
+	}
+	#notLogged {
+		display: block;
+		margin: auto;
+		/* border: 1px solid white; */
+		margin-top: 1%;
+		width: 80%;
+	}
+	#searchedMovies h2 {
+		color: white;
+		font-size: 1em;
+	}
+	#searchedMovies > div p {
+		color: white;
+		font-size: 1em;
+		margin: 1% auto;
 	}
 }
