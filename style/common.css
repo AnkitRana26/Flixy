@@ -113,6 +113,32 @@ form {
 }
 
 
+
+footer{
+	color: white;
+	display: flex;
+	justify-content: center;
+	padding: 1%;
+	font-size: larger;
+	font-family: sans-serif;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+	margin-top: 1%;
+	position: fixed;
+	bottom: 0px;
+	font-size: 1em;
+	width: 30%;
+}
+footer a{
+	color: white;
+	margin: auto 2%;
+}
+
+footer a:hover{
+	color: blue;
+}
+
+
+
 @media screen and (max-width:900px) {
 	nav{
 		/* display: grid; */
@@ -133,28 +159,7 @@ form {
 		width: 30%;
 		margin: auto;
 	}
-	
-}
-
-footer{
-	color: white;
-	display: flex;
-	justify-content: center;
-	padding: 1%;
-	font-size: larger;
-	font-family: sans-serif;
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-	margin-top: 1%;
-	position: fixed;
-	bottom: 0px;
-	font-size: 1em;
-	width: 40%;
-}
-footer a{
-	color: white;
-	margin: auto 2%;
-}
-
-footer a:hover{
-	color: blue;
+	footer{
+		width: 70%;
+	}
 }
