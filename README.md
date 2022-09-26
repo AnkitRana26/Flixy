@@ -39,6 +39,11 @@ When User Get Logged In he will see this Home Screen where it has slideshow of p
 
 ![homepage1](https://github.com/AnkitRana26/Flixy/blob/main/src/home1.png)
 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 ![homepage2](https://github.com/AnkitRana26/Flixy/blob/main/src/home2.png)
 
 ## Search Section
@@ -52,7 +57,19 @@ Movie Description Page has three section 1. Normal Details 2.Movie Plot/Overview
 
 
 ![des1](https://github.com/AnkitRana26/Flixy/blob/main/src/Desciption.png)
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 ![des2](https://github.com/AnkitRana26/Flixy/blob/main/src/overview.png)
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 ![des3](https://github.com/AnkitRana26/Flixy/blob/main/src/Related%20Videos.png)
 
 
